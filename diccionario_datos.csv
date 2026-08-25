@@ -1,0 +1,217 @@
+﻿variable,tipo_propuesto,n_no_nulos,pct_nulos,n_valores_unicos,ejemplos_valores,observaciones_calidad,descripcion,revisar_manual
+ID,numerica,152,0.0,152,"1, 2, 3, 4, 5",,,False
+Edad,numerica,152,0.0,67,"60, 75, 2, 62, 72",,,False
+Sexo,categorica binaria,152,0.0,2,"Hombre, Mujer",,,False
+Fecha de ingreso,fecha (almacenada como texto),152,0.0,144,"25/10/22, 13/12/16, 15/02/17, 30/12/16, 20/01/17",Convertir a tipo fecha en fase de preparacion de datos,,False
+Fecha de egreso,fecha (almacenada como texto),152,0.0,147,"18/11/22, 29/11/22, 22/03/17, 17/04/17, 9/02/17",Convertir a tipo fecha en fase de preparacion de datos,,False
+Dias estancia,numerica,152,0.0,71,"24, 35, 99, 61, 41",,,False
+Hipertension arterial,categorica binaria,152,0.0,2,"No, Si",,,False
+Diabetes mellitus,categorica binaria,152,0.0,2,"No, Si",,,False
+Dislipidemia,categorica binaria,152,0.0,2,"No, Si",,,False
+Obesidad Sobrepeso,categorica nominal,152,0.0,3,"No, Sobrepeso (>=25-29.9 IMC), Obesidad (>=30 IMC)",,,False
+Falla cardiaca,categorica binaria,152,0.0,2,"No, Si",,,False
+FEVI,categorica nominal,41,73.0,3,"< 40%, > o igual 50%, 40-49%",,,False
+Fibrilacion auricular,categorica binaria,152,0.0,2,"No, Si",,,False
+Enfermedad coronaria,categorica nominal,152,0.0,3,"No, Si, No information",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Accidente cerebrovascular,categorica binaria,152,0.0,2,"No, Si",,,False
+Valvulopatia,categorica binaria,152,0.0,2,"No, Si",,,False
+Estenosis valvular Ninguna,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Estenosis valvular Tricuspide,categorica nominal,152,0.0,1,No seleccionados,,,False
+Estenosis valvular Aortica,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Estenosis valvular Pulmonar,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Estenosis valvular Mitral,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Estenosis valvular No information,categorica nominal,152,0.0,1,No seleccionados,,,False
+Insuficiencia valvular Ninguna,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Insuficiencia valvular Tricuspide,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Insuficiencia valvular Aortica,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Insuficiencia valvular Pulmonar,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Insuficiencia valvular Mitral,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Insuficiencia valvular No information,categorica nominal,152,0.0,1,No seleccionados,,,False
+Reemplazo valvular,categorica binaria,49,67.8,2,"Si, No",,,False
+Reemplazo valvular mecanico,categorica nominal,34,77.6,3,"No Aplica, Aortica, Mitral",,,False
+Reemplazo valvular biologica,categorica nominal,34,77.6,5,"Mitral, Aortica, Pulmonar, Tricuspide, No aplica",,,False
+Cirugia cardiaca no valvular,categorica binaria,152,0.0,2,"No, Si",,,False
+Dispositivo cardiaco No,categorica binaria,152,0.0,2,"Seleccionados, No seleccionados",,,False
+Dispositivo cardiaco CDI,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Dispositivo cardiaco TRC,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Dispositivo cardiaco Marcapasos,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Dispositivo cardiaco No information,categorica nominal,152,0.0,1,No seleccionados,,,False
+Enfermedad cardiaca reumatica,categorica binaria,152,0.0,2,"No, Si",,,False
+Abuso de alcohol,categorica nominal,152,0.0,3,"No, Si, No information",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Cancer,categorica binaria,152,0.0,2,"No, Si",,,False
+Inmunosupresion o enfermedad autoinmune No,categorica binaria,152,0.0,2,"Seleccionados, No seleccionados",,,False
+Inmunosupresion o enfermedad autoinmune Trasplantado,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Inmunosupresion o enfermedad autoinmune Enfermedad autoinmune,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Inmunosupresion o enfermedad autoinmune Uso de esteroides,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Inmunosupresion o enfermedad autoinmune VIH,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Inmunosupresion o enfermedad autoinmune Otro,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Inmunosupresion o enfermedad autoinmune No information,categorica nominal,152,0.0,1,No seleccionados,,,False
+Enfermedad hepatica cirrosis,categorica binaria,152,0.0,2,"No, Si",,,False
+Enfermedad renal,categorica nominal,152,0.0,4,"No, Si, con hemodialisis, Si, sin dialisis, Si, con dialisis peritoneal",,,False
+Enfermedad pulmonar obstructiva cronica,categorica binaria,152,0.0,2,"No, Si",,,False
+Enfermedad tiroidea,categorica nominal,152,0.0,3,"No, Hipotiroidismo, Hipertiroidismo",,,False
+Cardiopatia congenita,categorica binaria,152,0.0,2,"Si, No",,,False
+Cateter permanente,categorica binaria,152,0.0,2,"No, Si",,,False
+Cirugia o procedimiento endoscopico previo,categorica nominal,152,0.0,4,"No, Gastrointestinal, Urologico, No information",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Endocarditis previa,categorica binaria,152,0.0,2,"No, Si",,,False
+Procedimiento odontologico previo,categorica binaria,152,0.0,2,"No, Si",,,False
+Presencia de inflamacion infeccion odontologica,categorica nominal,150,1.3,3,"No information, No, Si",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Uso de drogas IV,categorica nominal,151,0.7,3,"No, Si, No information",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Otro factor predisponente,texto libre / otro,149,2.0,48,"infeccion urinaria y artritis septica, No information, Vacunacion incompleta, Desnutricion, Mielomeningocele",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,True
+Fecha de inicio de los sintomas,fecha (almacenada como texto),152,0.0,142,"21/09/22, 13/10/22, 10/11/16, 15/02/17, 30/12/16",Convertir a tipo fecha en fase de preparacion de datos; Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Fiebre,categorica binaria,152,0.0,2,"No, Si",,,False
+Disnea,categorica nominal,152,0.0,3,"Si, No, No information",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Astenia adinamia,categorica nominal,152,0.0,3,"Si, No, No information",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Sintomas neurologicos,categorica binaria,152,0.0,2,"No, Si",,,False
+Tos,categorica nominal,152,0.0,3,"Si, No, No information",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Eventos vasculares No,categorica binaria,152,0.0,2,"Seleccionados, No seleccionados",,,False
+Eventos vasculares Lesion de Janeway,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Eventos vasculares Hemorragia en astilla,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Eventos vasculares Embolismo,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Eventos vasculares Hemorragia conjuntival,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Eventos vasculares ACV hemorragico,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Eventos vasculares ACV isquemico,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Eventos vasculares No information,categorica nominal,152,0.0,1,No seleccionados,,,False
+Hematuria,categorica binaria,152,0.0,2,"No, Si",,,False
+Manifestacion inmunologica No,categorica binaria,152,0.0,2,"Seleccionados, No seleccionados",,,False
+Manifestacion inmunologica Nodulo de Osler,categorica nominal,152,0.0,1,No seleccionados,,,False
+Manifestacion inmunologica Manchas de Roth,categorica nominal,152,0.0,1,No seleccionados,,,False
+Manifestacion inmunologica Glomerulonefritis,categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Manifestacion inmunologica No information,categorica nominal,152,0.0,1,No seleccionados,,,False
+Descompensacion de falla cardiaca,categorica nominal,152,0.0,6,"Stevenson B, No aplica, Stevenson A, No information, Stevenson L",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Sepsis Shock Septico,categorica nominal,152,0.0,4,"No, Shock  septico, Sepsis, No information",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Peso,numerica (con placeholder de texto),152,0.0,82,"59,1, 62, 10, 52, 75",,,False
+Talla,numerica (con placeholder de texto),152,0.0,46,"169, 170, 85, 165, 160",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+IMC,numerica (con placeholder de texto),152,0.0,115,"20,7, 21,5, 13,8, 19,1, 29,3",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Presion arterial sistolica,numerica,152,0.0,76,"150, 75, 94, 105, 147",,,False
+Presion arterial diastolica,numerica,152,0.0,57,"65, 37, 56, 62, 74",,,False
+Presion arterial media,numerica (con placeholder de texto),152,0.0,89,"93, 49,67, 68, 76, 90",,,False
+Frecuencia cardiaca,numerica,152,0.0,70,"108, 110, 91, 104, 102",,,False
+Frecuencia respiratoria,numerica,152,0.0,25,"19, 26, 24, 16, 38",,,False
+Esplenomegalia,categorica binaria,152,0.0,2,"No, Si",,,False
+Hepatomegalia,categorica binaria,152,0.0,2,"No, Si",,,False
+Soplo cardiaco de novo,categorica binaria,152,0.0,2,"No, Si",,,False
+Exacerbacion  soplo cardiaco preexistente,categorica binaria,152,0.0,2,"No, Si",,,False
+Edema en miembros inferiores,categorica binaria,152,0.0,2,"No, Si",,,False
+Leucocitos,numerica,151,0.7,146,"9120.0, 10040.0, 8970.0, 9010.0, 19290.0",,,False
+Linfocitos,numerica (con placeholder de texto),151,0.7,117,"1210, 1060, 3100, 1530, 610",,,False
+Neutrofilos,numerica (con placeholder de texto),151,0.7,146,"6840, 6930, 4280, 5750, 17880",,,False
+Hemoglobina,numerica (con placeholder de texto),151,0.7,72,"11,4, 10,5, 9,3, 7,2, 11,2",,,False
+Plaquetas,numerica,151,0.7,125,"195000.0, 14600.0, 132000.0, 332000.0, 317000.0",,,False
+Velocidad eritrosedimentacion,numerica (con placeholder de texto),151,0.7,59,"67, No information, 22, 31, 58",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Proteina C reactiva,numerica (con placeholder de texto),151,0.7,146,"9,7, 7,02, 2,31, 16,59, 47,6",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Factor reumatoideo,numerica (con placeholder de texto),151,0.7,14,"No information, 246, 13,3, 45,9, 10",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Creatinina,numerica (con placeholder de texto),151,0.7,118,"0,99, 0,69, 0,34, 0,85, 0,86",,,False
+Nitrogeno ureico,numerica (con placeholder de texto),151,0.7,130,"8,7, 17,3, 34, 18,9, 17,1",,,False
+NT proBNP BNP,numerica (con placeholder de texto),151,0.7,52,"1782, No information, 4206, 6651, 2823",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Troponina I ultrasensible,numerica (con placeholder de texto),151,0.7,50,"188, No information, 24,1, 0,0053, 1000",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Troponina T,numerica (con placeholder de texto),151,0.7,3,"No information, 47, 436",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Procalcitonina,numerica (con placeholder de texto),151,0.7,31,"0,062, No information, 5,78, 0,147, 1,08",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Potasio,numerica (con placeholder de texto),151,0.7,106,"4,1, 3,3, 3,44, 4,33, 4,44",,,False
+Sodio,numerica (con placeholder de texto),151,0.7,75,"138, 135, 141, 136, 147",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+AST,numerica (con placeholder de texto),151,0.7,129,"11, No information, 435, 51,4, 40,3",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+ALT,numerica (con placeholder de texto),151,0.7,123,"16, No information, 441, 64,5, 59,4",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Hemocultivo,categorica binaria,151,0.7,2,"Negativo, Positivo",,,False
+Staphylococcus aureus,categorica nominal,151,0.7,4,"No, Si, meticilino sensible, Si, meticilino resistente, No information",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Staphylococcus coagulasa negativo,categorica nominal,151,0.7,8,"No, S. epidermidis, S. capitis, S. haemolyticus, S. hominis",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Streptococcus,categorica nominal,151,0.7,7,"No, S. pneumoniae, S. viridans, S. gallolyticus  (bovis), S. agalactiae",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Enterococcus spp,categorica nominal,151,0.7,6,"No, E. faecalis, No information, E. faecium, E. gallinarum",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+HACEK,categorica nominal,151,0.7,4,"No, Aggregatibacter spp, Haemophilus spp, No information",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Bacteria gram negativa,categorica nominal,151,0.7,7,"No, Serratia marcescens, Klebsiella spp, Pseudomonas spp, No information",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Hongos,categorica nominal,151,0.7,3,"No, No information, Candida spp",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Polimicrobiano,categorica nominal,151,0.7,3,"No, Si, No information",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Otro patogeno,categorica nominal,150,1.3,12,"No information, Staphylococcushaemolyticus, Actinomycesdenticolens, Cutibacteriumacnes, Mycobacteriummucogenicum",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Aislamiento positivo,categorica binaria,150,1.3,2,"No, Si",,,False
+Ecocardiograma,categorica nominal,151,0.7,1,Si,,,False
+Fecha ecocardiograma,fecha (almacenada como texto),151,0.7,146,"26/10/22, 10/11/22, 13/12/16, 16/02/17, 6/01/17",Convertir a tipo fecha en fase de preparacion de datos,,False
+FEVI_ecocardiograma,numerica,151,0.7,31,"35.0, 64.0, 68.0, 54.0, 75.0",,,False
+Valvulopatia_ecocardiograma,categorica binaria,151,0.7,2,"Si, No",,,False
+Estenosis valvular No),categorica binaria,152,0.0,2,"Seleccionados, No seleccionados",,,False
+Estenosis valvular Aortica),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Estenosis valvular Mitral),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Estenosis valvular Pulmonar),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Estenosis valvular Tricuspidea),categorica nominal,152,0.0,1,No seleccionados,,,False
+Estenosis valvular No information),categorica nominal,152,0.0,1,No seleccionados,,,False
+Insuficiencia valvular No),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Insuficiencia valvular Aortica),categorica binaria,152,0.0,2,"Seleccionados, No seleccionados",,,False
+Insuficiencia valvular Mitral),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Insuficiencia valvular Pulmonar),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Insuficiencia valvular Tricuspidea),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Insuficiencia valvular No information),categorica nominal,152,0.0,1,No seleccionados,,,False
+VegetacionesNo),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+VegetacionesAortica),categorica binaria,152,0.0,2,"Seleccionados, No seleccionados",,,False
+VegetacionesMitral),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+VegetacionesPulmonar),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+VegetacionesTricuspidea),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+VegetacionesDispositivo),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+VegetacionesOtro),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+VegetacionesNo information),categorica nominal,152,0.0,1,No seleccionados,,,False
+Otro sitio anatomico para vegetacion,texto libre / otro,150,1.3,27,"No information, Electrodo de marcapasos en cavidad derecha, Masa bilobulada desembocadura vena cava superior, Masa movil en desembocadura de vena cava superior , Vena cava inferior",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,True
+Fecha del diagnostico,fecha (almacenada como texto),151,0.7,147,"28/10/22, 29/10/22, 9/12/16, 6/03/17, 6/01/17",Convertir a tipo fecha en fase de preparacion de datos,,False
+Sospecha clinica,categorica binaria,151,0.7,2,"Si, No",,,False
+Confirmacion con imagen,categorica binaria,151,0.7,2,"Si, No",,,False
+Tipo de endocarditis,categorica nominal,151,0.7,5,"Nativa, Protesica, Asociada a Dispositvo cardiaco, Asociada a cateter, No information",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Tipo de endocarditis (temporalidad),categorica nominal,151,0.7,3,"Aguda, Subaguda, Cronica",,,False
+Diagnostico con criterios de Duke,categorica nominal,151,0.7,3,"Definitivo, Posible, Improbable",,,False
+Evento embolico,categorica nominal,151,0.7,6,"no, Otro, Coronarias, Pulmon, Bazo",,,False
+Evento cerebrovascular,categorica nominal,151,0.7,3,"No, ACV hemorragico, ACV isquemico",,,False
+Falla cardiaca descompensada,categorica binaria,151,0.7,2,"Si, No",,,False
+Hemocultivo  positivo persistente,categorica binaria,151,0.7,2,"No, Si",,,False
+ArritmiaNo),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+ArritmiaVentricular),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+ArritmiaSupraventricular),categorica binaria,152,0.0,2,"Seleccionados, No seleccionados",,,False
+ArritmiaNo information),categorica nominal,152,0.0,1,No seleccionados,,,False
+Shock septico,categorica binaria,151,0.7,2,"No, Si",,,False
+Espondilitis,categorica binaria,151,0.7,2,"No, Si",,,False
+Fiebre persistente,categorica binaria,151,0.7,2,"No, Si",,,False
+Aneurisma micotico,categorica binaria,151,0.7,2,"No, Si",,,False
+Trombocitopenia,categorica binaria,151,0.7,2,"No, Si",,,False
+Glomerulonefritis,categorica binaria,151,0.7,2,"No, Si",,,False
+Absceso,categorica binaria,151,0.7,2,"No, Si",,,False
+Hemodialisis,categorica binaria,151,0.7,2,"No, Si",,,False
+Mediastinitis,categorica binaria,151,0.7,2,"No, Si",,,False
+Antibiotico,categorica binaria,151,0.7,2,"Si, No",,,False
+Antibiotico  recibidoCeftriaxona),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Antibiotico  recibidoVancomicina),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Antibiotico  recibidoCeftazidima avibactam),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Antibiotico  recibidoMeropenem),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Antibiotico  recibidoGentamicina),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Antibiotico  recibidoRifampicina),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Antibiotico  recibidoAmoxicilina),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Antibiotico  recibidoCefepime),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Antibiotico  recibidoDoxiciclina),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Antibiotico  recibidoPenicilina benzatinica),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Antibiotico  recibidoFlucloxacilina),categorica nominal,152,0.0,1,No seleccionados,,,False
+Antibiotico  recibidoCeftarolina),categorica binaria,152,0.0,2,"Seleccionados, No seleccionados",,,False
+Antibiotico  recibidoDaptomicina),categorica binaria,152,0.0,2,"Seleccionados, No seleccionados",,,False
+Antibiotico  recibidoPiperacilina Tazobactam),categorica binaria,152,0.0,2,"Seleccionados, No seleccionados",,,False
+Antibiotico  recibidoOxacilina),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Antibiotico  recibidoAmpicilina),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Antibiotico  recibidoMoxifloxacino),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Antibiotico  recibidoOtro),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Antibiotico  recibidoNo information),categorica nominal,152,0.0,1,No seleccionados,,,False
+Otro antibiotico,texto libre / otro,151,0.7,19,"No information, Metronidazol, PolimixinaB, Penicilinacristalina, Amikacina",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,True
+Dias antibiotico,numerica,151,0.7,49,"23.0, 40.0, 42.0, 60.0, 28.0",,,False
+Intervencion quirurgica,categorica binaria,151,0.7,2,"Si, No",,,False
+Tipo de cirugia,categorica binaria,65,57.2,2,"Abierta, Endovascular",,,False
+Procedimiento valvular,categorica nominal,65,57.2,4,"Protesis mecanica, Protesis biologica, Reparo valvular, Ninguno",,,False
+Procedimiento concomitante,categorica nominal,65,57.2,6,"Ninguno, Extraccion de masa, RVM, Cierre de CIA, Otro",,,False
+Otro procedimiento concomitante,categorica nominal,9,94.1,9,"Plastia mitral cerrando perforacion de valva anterior, Plastia tricuspide de vega y reseccion de degeneracion mixoide , Exclusion de auriculilla dispositivo Atriclip, Extraccion de guia abandonada , Cierre CIV",,,False
+Requerimiento de Retiro de  algun dispositivo,categorica nominal,65,57.2,3,"No, Retiro percutaneo, Retiro quirurgico",,,False
+Complicacion postoperatoriaNinguna),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Complicacion postoperatoriaACV),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Complicacion postoperatoriaDialisis),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Complicacion postoperatoriaAlteracion de la conduccion),categorica binaria,152,0.0,2,"Seleccionados, No seleccionados",,,False
+Complicacion postoperatoriaDispositivo cardiaco),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Complicacion postoperatoriaReintervencion por sangrado),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Complicacion postoperatoriaISO),categorica binaria,152,0.0,2,"No seleccionados, Seleccionados",,,False
+Complicacion postoperatoriaNo information),categorica nominal,152,0.0,1,No seleccionados,,,False
+Requerimiento de UCI,categorica binaria,151,0.7,2,"Si, No",,,False
+Dias de estancia en UCI,numerica (con placeholder de texto),151,0.7,42,"13, 27, 0, 35, 1",Contiene 'No information' como texto; tratar como nulo en fase de preparacion,,False
+Requerimiento de inotropicos,categorica binaria,151,0.7,2,"No, Si",,,False
+Requerimiento de vasoactivos,categorica binaria,151,0.7,2,"No, Si",,,False
+Requerimiento de VMI,categorica binaria,151,0.7,2,"No, Si",,,False
+Estado vital al  finalizar hospitalizacion,categorica nominal,151,0.7,3,"Vivo, Remitido, Muerto",,,False
+Causa de muerte,categorica binaria,30,80.3,2,"Cardiovascular, No cardiovascular",,,False
+Mortalidad intraoperatoria,categorica binaria,30,80.3,2,"No, Si",,,False
+Mortalidad en las primeras 48 horas POP,categorica binaria,30,80.3,2,"No, Si",,,False
