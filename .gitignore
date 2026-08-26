@@ -1,2 +1,17 @@
-.vscode/
+﻿# Python
+__pycache__/
+*.pyc
 .venv/
+venv/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
