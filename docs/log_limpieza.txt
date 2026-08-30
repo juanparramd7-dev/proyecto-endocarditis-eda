@@ -1,0 +1,89 @@
+[CARGA] Dimensiones originales: 152 filas x 216 columnas
+[NULOS] 'No information' → NaN: 0 valores convertidos
+[ERRORES] Correcciones de digitación:
+  ID 37: Sodio↔Potasio intercambiados (K=130,9→3,74, Na=3,74→130,9)
+  ID 77: Sodio↔Potasio intercambiados (K=136→4,45, Na=4,45→136)
+  ID 58: Días estancia=517 (verificado con fechas, es real → se conserva)
+  ID 40: Edad=0, Peso=3kg, Talla=50cm (neonato, datos coherentes → se conserva)
+  ID 118: Procalcitonina=63700 → NaN (valor fuera de rango clínico plausible)
+[TIPOS] Conversión de tipos de datos:
+  0 columnas: coma decimal → punto, convertidas a float
+  5 columnas de fecha convertidas: ['Fecha de ingreso', 'Fecha de egreso', 'Fecha de inicio de los sintomas', 'Fecha ecocardiograma', 'Fecha del diagnostico']
+[NULOS] Estrategias de tratamiento:
+  ELIMINADAS 6 columnas con >70% nulos:
+    - FEVI (73.0% nulos)
+    - Reemplazo valvular mecanico (77.6% nulos)
+    - Reemplazo valvular biologica (77.6% nulos)
+    - Otro procedimiento concomitante (94.1% nulos)
+    - Mortalidad intraoperatoria (80.3% nulos)
+    - Mortalidad en las primeras 48 horas POP (80.3% nulos)
+  Hemocultivo: 1 nulos → moda ('Positivo')
+  Aislamiento positivo: 2 nulos → moda ('Si')
+  Valvulopatia_ecocardiograma: 1 nulos → moda ('Si')
+  Sospecha clinica: 1 nulos → moda ('Si')
+  Confirmacion con imagen: 1 nulos → moda ('Si')
+  Falla cardiaca descompensada: 1 nulos → moda ('No')
+  Hemocultivo  positivo persistente: 1 nulos → moda ('No')
+  Shock septico: 1 nulos → moda ('No')
+  Espondilitis: 1 nulos → moda ('No')
+  Fiebre persistente: 1 nulos → moda ('No')
+  Aneurisma micotico: 1 nulos → moda ('No')
+  Trombocitopenia: 1 nulos → moda ('No')
+  Glomerulonefritis: 1 nulos → moda ('No')
+  Absceso: 1 nulos → moda ('No')
+  Hemodialisis: 1 nulos → moda ('No')
+  Mediastinitis: 1 nulos → moda ('No')
+  Antibiotico: 1 nulos → moda ('Si')
+  Intervencion quirurgica: 1 nulos → moda ('No')
+  Requerimiento de UCI: 1 nulos → moda ('Si')
+  Requerimiento de inotropicos: 1 nulos → moda ('No')
+  Requerimiento de vasoactivos: 1 nulos → moda ('Si')
+  Requerimiento de VMI: 1 nulos → moda ('No')
+  Leucocitos: 1 nulos → mediana (11000.00)
+  Plaquetas: 1 nulos → mediana (201000.00)
+  FEVI_ecocardiograma: 1 nulos → mediana (60.00)
+  Dias antibiotico: 1 nulos → mediana (42.00)
+  FEVI: eliminada por >70% nulos. Usar 'Falla cardiaca' como proxy en modelo
+  5 variables categóricas con 30-70% nulos → sin imputar:
+    - Reemplazo valvular (67.8%)
+    - Tipo de cirugia (57.2%)
+    - Procedimiento valvular (57.2%)
+    - Procedimiento concomitante (57.2%)
+    - Requerimiento de Retiro de  algun dispositivo (57.2%)
+[OUTLIERS] Estrategia: Winsorización (capping) al percentil 1-99
+  Justificación: conserva la observación reemplazando el valor
+  extremo por el límite del percentil. Apropiado para variables
+  clínicas donde los extremos pueden ser reales pero distorsionan.
+  Presion arterial sistolica: 2 bajos (→74.5), 2 altos (→173.5)
+  Presion arterial diastolica: 2 bajos (→34.5), 2 altos (→98.4)
+  Frecuencia cardiaca: 2 bajos (→47.1), 2 altos (→158.0)
+  Frecuencia respiratoria: 2 bajos (→11.0), 2 altos (→44.9)
+  Leucocitos: 2 bajos (→4201.4), 2 altos (→35259.8)
+
+  Variables con outliers conservados (justificación clínica):
+    - Edad: rango 0-89, incluye neonatos (legítimo)
+    - Dias estancia: ID 58=517 días (verificado con fechas)
+    - Dias antibiotico: tratamientos prolongados son clínicamente posibles
+    - Dias de estancia en UCI: variabilidad esperada en UCI
+
+[OBJETIVO] Variable: 'Estado vital al  finalizar hospitalizacion'
+  Distribución original: {'Vivo': 109, 'Muerto': 30, 'Remitido': 12}
+  Excluidos 12 pacientes 'Remitido' (desenlace desconocido)
+  Nueva columna 'Mortalidad': 1=Muerto, 0=Vivo
+  Distribución final: {0: 110, 1: 30}
+
+============================================================
+RESUMEN POST-LIMPIEZA
+============================================================
+  Dimensiones: 140 filas x 211 columnas
+  Nulos restantes: 568 (1.9% promedio)
+  Variable objetivo — Mortalidad: {0: 110, 1: 30}
+
+  Estado de variables para hipótesis:
+    ✓ Falla cardiaca: presente, 0 nulos
+    ✗ FEVI: NO presente (eliminada o renombrada)
+    ✓ Staphylococcus aureus: presente, 1 nulos
+    ✓ Edad: presente, 0 nulos
+    ✓ Mortalidad: presente, 0 nulos
+
+[GUARDADO] /mnt/user-data/outputs/BD_Endocarditis_limpia.csv
